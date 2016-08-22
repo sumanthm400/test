@@ -1,0 +1,171 @@
+
+[22-09-2015 20:25:18,398 | INFO  | CSubscribeProductReqAssmCustom.java |
+9  ] :-> In Class  ===>CSubscriberProductReqAssm ,Method
+===>startAssembleReqCustom
+[22-09-2015 20:25:18,428 | INFO  | CSubscribeProductReqAssm.java  | 20  ]
+:-> In Class  ===>CSubscribeProductReqAssm , Method  ===> buildAssembleReq
+[22-09-2015 20:25:18,437 | INFO  | CSubscribeProductReqAssm.java  | 25  ]
+:-> reqxml4mIVR : <REQUEST>
+<FEATURE>ExternalSDPActivate</FEATURE>
+<MSISDN>01819210737</MSISDN>
+<CTID>12345</CTID>
+<PRODUCTID>0300401797</PRODUCTID>
+<CHANNELID>2</CHANNELID>
+<TIMESTAMP>22092015155959</TIMESTAMP>
+<OPERATIONCODE>zh</OPERATIONCODE>
+<SPID>200094</SPID>
+<PASSWORD>Robi12345</PASSWORD>
+</REQUEST>
+
+[22-09-2015 20:25:18,511 | INFO  | CSubscribeProductReqAssm.java  | 40  ]
+:-> FeaturePropertyMap for Feature :ExternalSDPActivate is {RequestFormat=
+	<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+xmlns:loc="http://www.csapi.org/schema/parlayx/subscribe/manage/v1_0/local">
+	<soapenv:Header>
+	<tns:RequestSOAPHeader
+xmlns:tns="http://www.huawei.com.cn/schema/common/v2_1">
+	<tns:spId>35000001</tns:spId>
+	<tns:spPassword>C5216E519A071D601BEDD150F3FCD026</tns:spPassword>
+	<tns:timeStamp>$TIMESTAMP$</tns:timeStamp>
+	</tns:RequestSOAPHeader>
+	</soapenv:Header>
+	<soapenv:Body>
+	<loc:subscribeProductRequest>
+	<loc:subscribeProductReq>
+	<userID>
+	<ID>$MSISDN$</ID>
+	<type>0</type>
+	</userID>
+	<subInfo>
+	<productID>$PRODUCTID$</productID>
+	<operCode>$OPERCODE$</operCode>
+	<isAutoExtend>0</isAutoExtend>
+	<channelID>2</channelID>
+	</subInfo>
+	</loc:subscribeProductReq>
+	</loc:subscribeProductRequest>
+	</soapenv:Body>
+	</soapenv:Envelope>
+	}
+[22-09-2015 20:25:18,520 | INFO  | CSubscribeProductReqAssmCustom.java |
+2  ] :-> In Class  ===>CSubscriberProductReqAssm ,Method
+===>endAssembleReqCustom
+[22-09-2015 20:25:18,615 | INFO  | CSubscribeProductFrmtValidatorCustom.java
+| 18  ] :-> In class ---> CSubscribeProductFrmtValidatorCustom  , In
+Method ---> startValidateCustom()
+[22-09-2015 20:25:18,622 | INFO  | CSubscribeProductFrmtValidator.java |
+5  ] :-> In Class  ===> CSubscribeProductFrmtValidator, Method
+===>buildValidateReq
+[22-09-2015 20:25:18,629 | INFO  | CSubscribeProductFrmtValidatorCustom.java
+| 12  ] :-> In class ---> CSubscribeProductFrmtValidatorCustom  , In
+Method ---> endValidateCustom()
+[22-09-2015 20:25:18,716 | INFO  | CSubscribeProductReqConvCustom.java |
+8  ] :-> In class ---> CSubscribeProductReqConvCustom  , In Method --->
+startConvertReqCustom()
+[22-09-2015 20:25:18,723 | INFO  | CSubscribeProductReqConv.java  | 12  ]
+:-> In Class  === >CSubscribeProductReqConv, Method  ===> buildConvertReq
+[22-09-2015 20:25:18,730 | INFO  | CSubscribeProductReqConvCustom.java |
+2  ] :-> In class ---> CSubscribeProductReqConvCustom  , In Method --->
+endConvertReqCustom()
+[22-09-2015 20:25:19,020 | INFO  | CSubscribeProductBOValidatorCustom.java |
+18  ] :-> In class ---> CSubscribeProductBOValidatorCustom  , In Method --->
+startValidateCustom()
+[22-09-2015 20:25:19,029 | INFO  | CSubscribeProductBOValidator.java | 12  ]
+:-> In class ---> CSubscribeProductBOValidator  , In Method --->
+buildValidate()
+[22-09-2015 20:25:19,036 | INFO  | CSubscribeProductBOValidatorCustom.java |
+12  ] :-> In class ---> CSubscribeProductBOValidatorCustom  , In Method --->
+endValidateCustom()
+[22-09-2015 20:25:19,071 | INFO  | CSubscribeProductBOCustom.java | 18  ]
+:-> In class ---> CSubscribeProductBOCustom  , In Method --->
+startProcessCustom()
+[22-09-2015 20:25:19,079 | INFO  | CSubscribeProductBO.java       | 29  ]
+:-> buildProcess() invoked
+[22-09-2015 20:25:19,087 | INFO  | CSubscribeProductBO.java       | 30  ]
+:-> generic Dto Obj :
+com.sixdee.ivr.livetech.Common.Vo.CRequest4mIVRVo@6613e9fc
+[22-09-2015 20:25:19,108 | INFO  | CSubscribeProductBO.java       | 38  ]
+:-> CRequest4mIVRDto :
+com.sixdee.ivr.livetech.Common.Vo.CRequest4mIVRVo@6613e9fc
+[22-09-2015 20:25:19,149 | INFO  | CSubscribeProductBO.java       | 51  ]
+:-> Request to client:
+	<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+xmlns:loc="http://www.csapi.org/schema/parlayx/subscribe/manage/v1_0/local">
+	<soapenv:Header>
+	<tns:RequestSOAPHeader
+xmlns:tns="http://www.huawei.com.cn/schema/common/v2_1">
+	<tns:spId>35000001</tns:spId>
+	<tns:spPassword>C5216E519A071D601BEDD150F3FCD026</tns:spPassword>
+	<tns:timeStamp>20150922155959</tns:timeStamp>
+	</tns:RequestSOAPHeader>
+	</soapenv:Header>
+	<soapenv:Body>
+	<loc:subscribeProductRequest>
+	<loc:subscribeProductReq>
+	<userID>
+	<ID>01819210737</ID>
+	<type>0</type>
+	</userID>
+	<subInfo>
+	<productID>0300401797</productID>
+	<operCode>$OPERCODE$</operCode>
+	<isAutoExtend>0</isAutoExtend>
+	<channelID>2</channelID>
+	</subInfo>
+	</loc:subscribeProductReq>
+	</loc:subscribeProductRequest>
+	</soapenv:Body>
+	</soapenv:Envelope>
+
+[22-09-2015 20:25:19,161 | INFO  | CSubscribeProductBO.java       | 55  ]
+:-> URL for subscribe :
+http://10.16.100.194:8310/SubscribeManageService/services/SubscribeManage
+[22-09-2015 20:25:19,988 | INFO  | ExternalSDOPResponseParsing.java | 40  ]
+:-> parseResponse() invoked
+[22-09-2015 20:25:20,007 | INFO  | ExternalSDOPResponseParsing.java | 43  ]
+:-> Response is :<soapenv:Envelope
+xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><soapenv:Body><ns1:sub
+scribeProductResponse
+xmlns:ns1="http://www.csapi.org/schema/parlayx/subscribe/manage/v1_0/local">
+<ns1:subscribeProductRsp><result>22007201</result></ns1:subscribeProductRsp>
+</ns1:subscribeProductResponse></soapenv:Body></soapenv:Envelope>
+[22-09-2015 20:25:20,072 | INFO  | ExternalSDOPResponseParsing.java | 83  ]
+:-> XPath initialized successfully
+[22-09-2015 20:25:20,079 | INFO  | ExternalSDOPResponseParsing.java | 125 ]
+:-> getResultCode() invoked
+[22-09-2015 20:25:20,143 | INFO  | ExternalSDOPResponseParsing.java | 138 ]
+:-> resultcode is :22007201
+[22-09-2015 20:25:20,151 | INFO  | ExternalSDOPResponseParsing.java | 144 ]
+:-> getResultDesc () invoked
+[22-09-2015 20:25:20,175 | INFO  | ExternalSDOPResponseParsing.java | 160 ]
+:-> resultDesc is :null
+[22-09-2015 20:25:20,183 | INFO  | CSubscribeProductBOCustom.java | 12  ]
+:-> In class ---> CSubscribeProductBOCustom  , In Method --->
+endProcessCustom()
+[22-09-2015 20:25:20,280 | INFO  | CSubscribeProductRespConvCustom.java |
+8  ] :-> In class ---> CSubscribeProductRespConvCustom  , In Method --->
+startConvertRespCustom()
+[22-09-2015 20:25:20,287 | INFO  | CSubscribeProductRespConv.java | 14  ]
+:-> In class ---> CSubscribeProductRespConv  , In Method --->
+buildConvertResp()
+[22-09-2015 20:25:20,544 | INFO  | CSubscribeProductRespConv.java | 32  ]
+:-> Response sent : <RESP>
+  <MSISDN>01819210737</MSISDN>
+  <SPID>200094</SPID>
+  <PRODUCTID>0300401797</PRODUCTID>
+  <OPERATIONCODE>zh</OPERATIONCODE>
+  <PASSWORD>Robi12345</PASSWORD>
+  <TIMESTAMP>20150922155959</TIMESTAMP>
+  <STATUSCODE>22007201</STATUSCODE>
+  <CTID>12345</CTID>
+</RESP>
+[22-09-2015 20:25:20,557 | INFO  | CSubscribeProductRespConvCustom.java |
+2  ] :-> In class ---> CSubscribeProductRespConvCustom  , In Method --->
+endConvertRespCustom()
+[22-09-2015 20:25:20,649 | INFO  | CSubscribeProductRespAssm.java | 12  ]
+:-> In class ---> CSubscribeProductRespAssm  , In Method --->
+buildAssembleResp()
+[22-09-2015 20:25:20,656 | INFO  | CSubscribeProductRespAssmCustom.java |
+2  ] :-> In class ---> CSubscribeProductRespAssmCustom  , In Method --->
+endAssembleRespCustom()
